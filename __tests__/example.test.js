@@ -9,9 +9,14 @@ describe ("Planets", () => {
     })
 
 
-    test ('Should clculate Earth Years into Venus Years', () => {
+    test ('Should calculate Earth Years into Venus Years', () => {
         let userinput = new PlanetCalculator(1, "Venus")
         expect (userinput.Venus(1)).toEqual("1.6");
+    })
+
+    test ('Should calculate Earth Years into Mars Years', () => {
+        let userinput = new PlanetCalculator(1, "Mars")
+        expect (userinput.Mars(1)).toEqual(".53");
     })
 
 })
