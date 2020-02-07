@@ -11,6 +11,7 @@ export class PlanetCalculator{
         var marsage = this.age/(.24);
         return marsage.toPrecision(2);
     }
+}
 
 //     Venus() {
 //         var venusage = this.age/()
