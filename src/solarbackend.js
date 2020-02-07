@@ -39,5 +39,21 @@ export class PlanetCalculator{
                 return textYearsPast
             }
         }
-
+    marsLifeExpectency() {
+        const lifeExpectencymars = this.lifeExpectency/(1.88);
+        let marsAge =this.age/(1.88);
+        let marsYearsLeft =lifeExpectencymars - marsAge;
+        let textYearsLeft = `You have about ${marsYearsLeft.toPrecision(3)} left to live`;
+            if (marsYearsLeft>=0){
+                return textYearsLeft
+            } else{
+                let marsYearsLeft =lifeExpectencymars - marsAge
+                let marsYearsLeftAbsoluteValue = marsYearsLeft* (-1)
+                let textYearsPast =` You have surpassed marss life expectency by ${marsYearsLeftAbsoluteValue.toPrecision(3)}` 
+                return textYearsPast
+            }
+        }
+        
     }
+
+
