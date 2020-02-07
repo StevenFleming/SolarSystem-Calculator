@@ -16,7 +16,7 @@ describe ("Planets", () => {
 
     test ('Should calculate Earth Years into Mars Years', () => {
         let userinput = new PlanetCalculator(1, "Mars")
-        expect (userinput.Mars(1)).toEqual(".53");
+        expect (userinput.Mars(1)).toEqual("0.53");
     })
 
 })

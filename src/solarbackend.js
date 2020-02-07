@@ -8,14 +8,20 @@ export class PlanetCalculator{
     }
 
     Mercury() {
-        var marsage = this.age/(.24);
-        return marsage.toPrecision(2);
+        let marsAge = this.age/(.24);
+        return marsAge.toPrecision(2);
     }
 
     Venus() {
-        var venusage = this.age/(.62);
-        return venusage.toPrecision(2);
+        let venusAge = this.age/(.62);
+        return venusAge.toPrecision(2);
     }
+
+    Mars() {
+        let marsAge =this.age/(1.88);
+        return marsAge.toPrecision(2);
+    }
+
 }
 
 
