@@ -30,11 +30,12 @@ export class PlanetCalculator{
         let jupiterAge =this.age/(11.86);
         let jupiterYearsLeft =lifeExpectencyJupiter - jupiterAge
         let textYearsLeft = `You have about ${jupiterYearsLeft.toPrecision(3)} left to live`;
-        let textYearsPast =` You have surpassed Jupiters life expetency by ${jupiterYearsLeft.toPrecision(3)} `
             if (jupiterYearsLeft>0){
                 return textYearsLeft
             }else{
-               jupiterYearsLeft* (-1)
+                let jupiterYearsLeft =lifeExpectencyJupiter - jupiterAge
+                let jupiterYearsLeftAbsoluteValue = jupiterYearsLeft* (-1)
+                let textYearsPast =` You have surpassed Jupiters life expetency by ${jupiterYearsLeftAbsoluteValue.toPrecision(3)}` 
                 return textYearsPast
             }
         // return jupiterAge.toPrecision(2);
