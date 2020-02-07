@@ -22,6 +22,11 @@ export class PlanetCalculator{
         return marsAge.toPrecision(2);
     }
 
+    Jupiter() {
+        let jupiterAge =this.age/(11.86);
+        return jupiterAge.toPrecision(2);
+    }
+
 }
 
 
