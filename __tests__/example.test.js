@@ -26,3 +26,10 @@ describe ("Planets", () => {
 
 })
 
+describe ("Life Expectency", () => {
+    test ('should return text string telling user how many jupiter years they have left to live', () => {
+        let userinput = new PlanetCalculator(20, "Jupiter")
+        expect (userinput.jupiterLifeExpectency(20)).toEqual(`You have about 4.38 left to live`)
+    })
+})
+
