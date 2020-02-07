@@ -49,11 +49,25 @@ export class PlanetCalculator{
             } else{
                 let marsYearsLeft =lifeExpectencymars - marsAge
                 let marsYearsLeftAbsoluteValue = marsYearsLeft* (-1)
-                let textYearsPast =` You have surpassed marss life expectency by ${marsYearsLeftAbsoluteValue.toPrecision(3)}` 
+                let textYearsPast =` You have surpassed mars life expectency by ${marsYearsLeftAbsoluteValue.toPrecision(3)}` 
+                return textYearsPast
+            }
+        }
+    venusLifeExpectency() {
+        const lifeExpectencyvenus = this.lifeExpectency/(.62);
+        let venusAge =this.age/(.62);
+        let venusYearsLeft =lifeExpectencyvenus - venusAge;
+        let textYearsLeft = `You have about ${venusYearsLeft.toPrecision(3)} left to live`;
+            if (venusYearsLeft>=0){
+                return textYearsLeft
+            } else if (venusYearsLeft<0){
+                let venusYearsLeftAbsoluteValue = venusYearsLeft* (-1)
+                let textYearsPast =` You have surpassed venus life expectency by ${venusYearsLeftAbsoluteValue.toPrecision(3)}` 
                 return textYearsPast
             }
         }
         
     }
+
 
 
