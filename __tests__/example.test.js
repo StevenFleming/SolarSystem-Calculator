@@ -5,7 +5,6 @@ describe ("Planets", () => {
     test ('Should calculate Earth Years to Mercury Years', () => {
         let userinput = new PlanetCalculator(1)
         expect (userinput.Mercury()).toEqual("4.2");
-
     })
 
     test ('Should calculate Earth Years into Venus Years', () => {
@@ -22,7 +21,6 @@ describe ("Planets", () => {
         let userinput = new PlanetCalculator(1)
         expect (userinput.Jupiter()).toEqual("0.084");
     })
-
 })
 
     describe ("Life Expectency", () => {
