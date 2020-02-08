@@ -7,8 +7,8 @@ export class PlanetCalculator{
     }
 
     Mercury() {
-        let marsAge = this.age/(.24);
-        return marsAge.toPrecision(2);
+        let mercuryAge = this.age/(.24);
+        return mercuryAge.toPrecision(2);
     }
     Venus() {
         let venusAge = this.age/(.62);
