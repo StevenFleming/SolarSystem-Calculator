@@ -24,7 +24,7 @@ export class PlanetCalculator{
     }
 
     yearsToMars() {
-        let yearsToMars = (this.marsDistance /this.velocity);
+        const yearsToMars = (this.marsDistance /this.velocity);
         let marsYearsToMars = yearsToMars/(1.88);
         let textYearsTo = `traveling in a straight line under perfect conditions it would take approximately ${yearsToMars} years to travel to mars. Or ${marsYearsToMars} mars years `
         return textYearsTo
